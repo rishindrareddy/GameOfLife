@@ -8,37 +8,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/newbg"
-    tools:context="com.rishindrareddy.gameoflife.MainActivity">
+    tools:context="com.rishindrareddy.conwaygol.MainActivity"
+    android:background="@drawable/newbg">
+
+
 
     <Button
-        android:text="Play Game"
+        android:text="Let's Play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="190dp"
-        android:id="@+id/playGame"
-        android:background="@android:color/background_light" />
+        android:layout_marginBottom="201dp"
+        android:id="@+id/playButton" />
 
     <Button
         android:text="About"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/playGame"
+        android:id="@+id/aboutButton"
+        android:layout_alignTop="@+id/playButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:id="@+id/aboutGame"
-        android:background="@android:color/background_light" />
-
-    <Button
-        android:text="exit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:id="@+id/exitGame"
-        android:layout_below="@+id/aboutGame"
-        android:layout_alignLeft="@+id/aboutGame"
-        android:layout_alignStart="@+id/aboutGame"
-        android:background="@android:color/background_light" />
+        android:layout_marginTop="91dp" />
 </RelativeLayout>
